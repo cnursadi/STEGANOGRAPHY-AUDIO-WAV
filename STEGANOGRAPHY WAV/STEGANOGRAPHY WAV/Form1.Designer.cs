@@ -28,12 +28,110 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.label1 = new System.Windows.Forms.Label();
+            this.browsefield = new System.Windows.Forms.TextBox();
+            this.browsebutton = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "File WAV";
+            // 
+            // browsefield
+            // 
+            this.browsefield.Location = new System.Drawing.Point(69, 9);
+            this.browsefield.Name = "browsefield";
+            this.browsefield.Size = new System.Drawing.Size(220, 20);
+            this.browsefield.TabIndex = 1;
+            // 
+            // browsebutton
+            // 
+            this.browsebutton.Location = new System.Drawing.Point(295, 6);
+            this.browsebutton.Name = "browsebutton";
+            this.browsebutton.Size = new System.Drawing.Size(75, 23);
+            this.browsebutton.TabIndex = 2;
+            this.browsebutton.Text = "Browse";
+            this.browsebutton.UseVisualStyleBackColor = true;
+            this.browsebutton.Click += new System.EventHandler(this.browsebutton_Click);
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(15, 68);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(388, 210);
+            this.tabControl1.TabIndex = 3;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(380, 184);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Sembunyikan Pesan";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(136, 155);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(95, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Sembunyikan";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(380, 184);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Ekstrak";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(462, 386);
+            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.browsebutton);
+            this.Controls.Add(this.browsefield);
+            this.Controls.Add(this.label1);
+            this.Name = "Form1";
+            this.Text = "Steganography WAV";
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox browsefield;
+        private System.Windows.Forms.Button browsebutton;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TabPage tabPage2;
     }
 }
 
