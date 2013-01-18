@@ -29,5 +29,10 @@ namespace STEGANOGRAPHY_WAV
                 control.Text = dialog.FileName;
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
